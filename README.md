@@ -9,6 +9,8 @@ A data synchronization solution that can be controlled freely.
 
 # Architecture
 
+![design diagram](https://github.com/caowm/free-data-sync/blob/master/doc/data-sync-design.png)
+
 # How to test
 1. Run the script on the databases.
 2. Configure application.yml, including data source, RabbitMQ, Data consumers, and Data producer.
