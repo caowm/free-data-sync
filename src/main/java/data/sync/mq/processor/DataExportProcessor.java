@@ -15,8 +15,7 @@ import data.sync.mq.util.DataUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
-import data.sync.mq.config.DataProducerProperty;
-import data.sync.mq.config.DataProcessorProperties;
+import data.sync.mq.config.*;
 import data.sync.mq.model.MQData;
 import data.sync.mq.model.MQDataSet;
 
