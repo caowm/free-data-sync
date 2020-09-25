@@ -12,7 +12,7 @@ A data synchronization solution that can be controlled freely.
 # How to test
 1. Run the script on the databases.
 2. Configure application.yml, including data source, RabbitMQ, Data consumers, and Data producer.
-3. In RabbitMQ, create exchange and quene, bind exchange and quene.
+3. In RabbitMQ, create exchanges and queues, bind exchanges and queues.
 4. Start data.sync.Application.
 5. Insert data to data2sync, for example:
 ````sql
@@ -22,9 +22,11 @@ insert into data2sync (sync_sn, sync_mode, sync_time, data_type, data_name, pk_n
 select @sn, '', now(), 'wp', 'wp_posts', 'ID', id, ''
 from wp_posts;
 ````
-6. Observe results.
+6. Observe the results.
 
 Author: caowm (remobjects@qq.com)
+
+
 
 
 

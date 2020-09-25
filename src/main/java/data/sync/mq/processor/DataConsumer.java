@@ -22,6 +22,8 @@ import data.sync.mq.service.ImportService;
 
 /**
  * MQ Data Consumer
+ *
+ * @author caowm 2020-09-20
  * 
  */
 

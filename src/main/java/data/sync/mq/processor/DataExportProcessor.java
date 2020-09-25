@@ -21,7 +21,9 @@ import data.sync.mq.model.MQData;
 import data.sync.mq.model.MQDataSet;
 
 /**
- * Task based data producer
+ * Data Sync Export Processor
+ *
+ * @author caowm 2020-09-20
  * 
  */
 

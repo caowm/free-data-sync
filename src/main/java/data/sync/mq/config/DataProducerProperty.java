@@ -2,6 +2,13 @@ package data.sync.mq.config;
 
 import lombok.Data;
 
+/**
+ * Data Producer Property
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Data
 public class DataProducerProperty {
 	

@@ -5,6 +5,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+/**
+ * Context Util
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Component
 public class ContextUtil implements ApplicationContextAware {
 	private static ApplicationContext applicationContext;

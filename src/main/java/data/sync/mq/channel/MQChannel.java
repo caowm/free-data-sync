@@ -14,6 +14,13 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.AMQP.BasicProperties;
 
+/**
+ * Rabbitmq channel
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Component
 public class MQChannel implements InitializingBean {
 

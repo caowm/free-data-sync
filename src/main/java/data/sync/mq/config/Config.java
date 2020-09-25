@@ -6,6 +6,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import data.sync.mq.core.TaskCreator;
 
+/**
+ * Config
+ * 
+ * @author caowm 2020-09-20
+ * 
+ */
 @Configuration
 @EnableScheduling
 public class Config {

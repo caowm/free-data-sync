@@ -21,6 +21,13 @@ import data.sync.mq.service.ImportService;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Data Snyc Task Creator
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Slf4j
 public class TaskCreator implements InitializingBean, DisposableBean {
 

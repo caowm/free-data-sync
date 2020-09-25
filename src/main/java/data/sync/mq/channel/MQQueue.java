@@ -14,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * Consume message
  *
+ * @author caowm 2020-09-20
+ * 
  */
 @Slf4j
 public class MQQueue {

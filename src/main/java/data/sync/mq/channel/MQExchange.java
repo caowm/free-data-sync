@@ -14,6 +14,8 @@ import com.rabbitmq.client.AMQP.BasicProperties;
  * 
  * Publish message
  *
+ * @author caowm 2020-09-20
+ * 
  */
 public class MQExchange {
 

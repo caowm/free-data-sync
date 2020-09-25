@@ -11,6 +11,13 @@ import data.sync.mq.config.DataProducerProperty;
 import data.sync.mq.model.MQData;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Data Publisher
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Slf4j
 public class DataPublisher {
 

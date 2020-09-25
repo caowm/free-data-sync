@@ -11,6 +11,13 @@ import java.util.Map;
 
 import data.sync.mq.model.*;
 
+/**
+ * Data Util
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 public class DataUtil {
 
 

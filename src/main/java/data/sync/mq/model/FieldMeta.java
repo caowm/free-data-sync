@@ -1,13 +1,20 @@
 package data.sync.mq.model;
 
+/**
+ * Field Meta
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 public class FieldMeta {
-	// 字段名
+
 	private String name;
-	// 字段类型
+
 	private String type;
-	// 字段大小
+
 	private int size;
-	// java类型名
+
 	private String className;
 
 	public FieldMeta() {

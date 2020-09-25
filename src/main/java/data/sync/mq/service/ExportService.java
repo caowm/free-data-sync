@@ -10,6 +10,13 @@ import data.sync.mq.model.MQData;
 import data.sync.mq.processor.DataExportProcessor;
 import data.sync.mq.processor.DataPublisher;
 
+/**
+ * Export Service
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Service
 public class ExportService {
 

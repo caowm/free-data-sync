@@ -6,6 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Packaged Data
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 public class MQData implements Serializable{
 
 	private static final long serialVersionUID = 1L;

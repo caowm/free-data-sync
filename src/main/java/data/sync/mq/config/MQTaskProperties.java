@@ -7,6 +7,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import lombok.Data;
 
+/**
+ * MQ Task Property
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Data
 @ConfigurationProperties("mq-task")
 public class MQTaskProperties {

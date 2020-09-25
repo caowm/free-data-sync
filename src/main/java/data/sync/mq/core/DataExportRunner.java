@@ -12,6 +12,13 @@ import data.sync.mq.service.ExportService;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Data Exporter Runner
+ *
+ * @author caowm 2020-09-20
+ * 
+ */
+
 @Slf4j
 public class DataExportRunner implements Runnable {
 

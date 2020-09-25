@@ -4,9 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * MQ DataSet
+ * Data set
+ *
+ * @author caowm 2020-09-20
  * 
  */
+
 public class MQDataSet {
 	// 表名
 	private String dataName;
