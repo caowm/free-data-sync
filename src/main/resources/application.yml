@@ -1,0 +1,57 @@
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        master:
+          username: root
+          password: root
+          url: jdbc:mysql://127.0.0.1:3306/his-master?characterEncoding=utf8&serverTimezone=UTC
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        wuhan:
+          username: root
+          password: root
+          url: jdbc:mysql://127.0.0.1:3306/his-wuhan?characterEncoding=utf8&serverTimezone=UTC
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        shanghai:
+          username: root
+          password: root
+          url: jdbc:mysql://127.0.0.1:3306/his-shanghai?characterEncoding=utf8&serverTimezone=UTC
+          driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    com.baomidou: debug
+    db.sync.mq: debug
+
+mq:
+  host: 127.0.0.1
+  username: guest
+  password: guest
+  
+mq-task:
+  dataConsumers:
+    - dataSource: shanghai
+      queueName: his.queue.import.shanghai
+      saveData: false
+    - dataSource: wuhan
+      queueName: his.queue.import.wuhan
+      saveData: false
+  dataProducers:
+    - dataSource: master
+      exchange: his-export-master
+      routing:
+      cron: 0/3 * * * * ?
+      interval: 10
+      dataType:
+      source:
+      worker: master1
+
+sync-sql:
+  syncoutbegin: call DATA_SYNC_OUT_BEGIN(?,?,?,?,?,?,?,?,?,?,?)
+  syncoutnames: call DATA_SYNC_OUT_NAMES(?,?,?,?,?)
+  syncoutdata: call DATA_SYNC_OUT_DATA(?,?,?,?,?,?,?,?)
+  syncoutend: call DATA_SYNC_OUT_END(?,?,?,?,?,?,?)
+  syncinbegin: call DATA_SYNC_IN_BEGIN(?,?,?,?,?,?,?,?,?,?)
+  syncinend: call DATA_SYNC_IN_END(?,?,?,?,?,?,?,?,?)
+  
+  
