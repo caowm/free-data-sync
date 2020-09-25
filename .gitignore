@@ -3,7 +3,7 @@
 .project
 *.iml
 target/
-data/
+/data/
 .settings/
 .DS_Store
 .gitattributes
