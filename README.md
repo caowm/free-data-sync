@@ -2,7 +2,7 @@
 A data synchronization solution that can be controlled freely.
 
 # Features
-1. Support multiple database.
+1. Support multiple data source and heterogeneous database.
 2. Through RabbitMQ we can route data flexibly.
 3. You can extend your needs through stored procedures.
 4. Support Blob field.
@@ -13,7 +13,7 @@ A data synchronization solution that can be controlled freely.
 
 # How to test
 1. Run the script on the databases.
-2. Configure application.yml, including data source, RabbitMQ, Data consumers, and Data producer.
+2. Configure application.yml, including data sources, RabbitMQ, Data consumers, and Data producers.
 3. In RabbitMQ, create exchanges and queues, bind exchanges and queues.
 4. Start data.sync.Application.
 5. Insert data to data2sync, for example:
